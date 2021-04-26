@@ -17,6 +17,8 @@ public class LegoSet {
 
     @XmlAttribute(name = "number")
     private int number;
+    @XmlAttribute(name = "url")
+    private URL url;
 
     private String name;
     private String theme;
@@ -27,6 +29,8 @@ public class LegoSet {
 
     private int pieces;
 
+    private String packaging;
+
     @XmlElementWrapper(name = "tags")
     @XmlElement(name = "tag")
     private List<String> tag;
@@ -36,7 +40,5 @@ public class LegoSet {
     private List<Minifig> minifigs;
 
     private Ratings ratings;
-
-    private URL url;
 
 }
